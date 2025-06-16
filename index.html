@@ -29,6 +29,19 @@
                 <img src="pic.JPEG" alt="Rakshith Mathad" class="profile-image">
                 <div class="about-text">
                     <p>I am a Software Engineer specializing in Generative AI and Data Science, currently working at CVS Health in New York City. With a strong background in AI, Machine Learning, and Software Engineering, I focus on building scalable AI solutions and large language model applications. I hold an MS in Applied Data Science from USC and have extensive experience in developing and deploying AI systems that impact millions of users.</p>
+                    <div class="skills-section">
+                        <h3>Technical Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Languages</h4>
+                                <p>Python, SQL, C, C++, CUDA (Intermediate)</p>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Tools & Technologies</h4>
+                                <p>Analytics, Deep Learning, Machine Learning, A/B Testing, GCP Vertex AI, AWS, Docker, Git, Informatica ETL, Web Scraping/Automation, AI Research, Parallel Programming, Numpy, Pandas, Scikit learn, LangChain, Nvidia DGX Server, Nsight Profiling, Nvidia NeMo, LLMOps, RAG, VectorDBs, LLM Training and Inference techniques, HuggingFace, FastAPI, RESTful API, Responsible AI, Linux, MongoDB, Selenium, Hadoop HDFS, PySpark, PowerBI/Tableau, LLMs, Generative AI, MapReduce, Azure, Google Cloud Platform, BigQuery, HiveQL, Horovod, ArcGIS, MLOps, Jenkins CI/CD, NLP, Forecasting, Unsupervised ML, Generative Models</p>
+                            </div>
+                        </div>
+                    </div>
                     <div class="resume-download">
                         <a href="Rakshith_Resume.pdf" download class="download-btn">
                             <i class="fas fa-download"></i> Download Resume
@@ -49,10 +62,11 @@
                         <h4>CVS Health, New York City, NY</h4>
                         <p class="date">June 2024 - Present</p>
                         <ul>
-                            <li>Building large-scale RAG and Rule-based FastAPI chat application on GCP Google AI Platform with $6MM/yr impact</li>
-                            <li>Working with OpenAI GPT PTUs and Gemini LLMs, implementing Feature Store and Matching Engine for improved latency</li>
-                            <li>Scaling production AI system to ~20,000 req/hr impacting 300k customers daily using Kubernetes GKE and Vertex AI</li>
-                            <li>Implementing complex data ingestion, preprocessing, and embedding strategies on GCP BigQuery and BigTable</li>
+                            <li>Working in the Conversational AI customer service team to build a large-scale complex RAG and Rule based FastAPI chat application on GCP Google AI Platform with $6MM/yr impact</li>
+                            <li>Implemented async/multithreaded/parallel semantic search using OpenAI GPT PTUs and Gemini LLMs, Feature Store and Matching Engine, improving latency and caching strategy</li>
+                            <li>Scaled production AI system to ~20,000 req/hr impacting 300k customers daily using Kubernetes GKE and Vertex AI</li>
+                            <li>Performed complex data ingestion and preprocessing on GCP BigQuery and BigTable, including chunking and embedding strategies</li>
+                            <li>Worked with Airflow, K8s, Jenkins CI/CD, LLM Evaluation framework, feature flags, and AI safety guardrails</li>
                         </ul>
                     </div>
                 </div>
@@ -63,9 +77,10 @@
                         <h4>AEG Entertainment Group, Los Angeles, CA</h4>
                         <p class="date">February 2024 - May 2024</p>
                         <ul>
-                            <li>Built Azure Data Factory pipelines for large data processing</li>
+                            <li>Built complex Azure Data Factory pipelines for large data processing</li>
                             <li>Implemented PySpark in Databricks for batch API processing</li>
                             <li>Handled Dynamics CRM data migration via OData REST APIs</li>
+                            <li>Managed Parquet/Avro for streaming and financial data reporting</li>
                         </ul>
                     </div>
                 </div>
@@ -76,9 +91,10 @@
                         <h4>CVS Health, New York City, NY</h4>
                         <p class="date">May 2023 - August 2023</p>
                         <ul>
-                            <li>Optimized Hadoop HDFS big data pipelines, processing 100M+ rows</li>
-                            <li>Reduced latency by 40% using HiveQL</li>
+                            <li>Optimized Hadoop HDFS big data pipelines, processing 100M+ rows with HiveQL</li>
+                            <li>Reduced latency by 40% through optimization techniques</li>
                             <li>Designed scalable ETL workflows and customer campaign strategies</li>
+                            <li>Leveraged Tableau, advanced OLAP, data blending, and predictive modeling</li>
                         </ul>
                     </div>
                 </div>
@@ -90,7 +106,8 @@
                         <p class="date">January 2022 - July 2022</p>
                         <ul>
                             <li>Developed deep learning applications for Object Detection and Visual Attention</li>
-                            <li>Implemented Recommendation Systems using Matrix Factorization</li>
+                            <li>Implemented Recommendation Systems using Matrix Factorization and Collaborative Filtering</li>
+                            <li>Optimized AI Inference on custom AI processor</li>
                         </ul>
                     </div>
                 </div>
@@ -102,7 +119,8 @@
                         <p class="date">November 2020 - June 2021</p>
                         <ul>
                             <li>Led team of 3 in SOTA Generative AI PyTorch research</li>
-                            <li>Implemented Conditional GAN with spatially adaptive normalization</li>
+                            <li>Implemented Conditional GAN with spatially adaptive normalization for Image manipulation</li>
+                            <li>Performed Semantic Segmentation with DeepLab-V2 to curate 20k-image dataset</li>
                             <li>Trained generative models on Nvidia DGX cluster</li>
                         </ul>
                     </div>
@@ -144,17 +162,34 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <h3>Parallelism for LLM Inference on GPUs</h3>
-                    <p>Deployed and served BERT Transformer on RTX GPU using PyTorch, ONNX, and NVIDIA TensorRT runtimes. Implemented CUDA Kernel optimization and Ray Serve deployment for async TinyLlama inference.</p>
+                    <ul>
+                        <li>Deployed and served BERT Transformer on RTX GPU using PyTorch, ONNX, and NVIDIA TensorRT runtimes</li>
+                        <li>Profiled performance bottlenecks using NVIDIA Nsight</li>
+                        <li>Built CUDA Kernel for optimized inference on custom NN</li>
+                        <li>Deployed async TinyLlama using Ray Serve and FastAPI</li>
+                        <li>Implemented FSDP/DDP training simulations using Ray/DeepSpeed</li>
+                    </ul>
                 </div>
 
                 <div class="project-card">
                     <h3>RAG-based LLM with Guardrails</h3>
-                    <p>Built a RAG-based chatbot using LangChain and Llama 2, integrated with Pinecone VectorDB and HuggingFace Sentence Transformer. Implemented NVIDIA NeMo Guardrails and LoRA LLM finetuning techniques.</p>
+                    <ul>
+                        <li>Built RAG-based chatbot using LangChain and Llama 2</li>
+                        <li>Integrated Pinecone VectorDB and HuggingFace Sentence Transformer</li>
+                        <li>Implemented NVIDIA NeMo Guardrails and LoRA LLM finetuning</li>
+                        <li>Developed e2e pipeline for LoRa finetuning and quantization</li>
+                        <li>Improved inference using NVIDIA Triton Inference Server</li>
+                    </ul>
                 </div>
 
                 <div class="project-card">
                     <h3>Research: Distributed Deep Learning</h3>
-                    <p>Published paper on "Performance Analysis of Distributed Deep Learning using Horovod on Image Classification" at IEEE ICICCS. Developed ML privacy-preserving techniques for Federated Learning systems.</p>
+                    <ul>
+                        <li>Published paper on "Performance Analysis of Distributed Deep Learning using Horovod on Image Classification" at IEEE ICICCS</li>
+                        <li>Developed ML privacy-preserving techniques for Federated Learning systems</li>
+                        <li>Implemented anomaly detection for adversary client nodes</li>
+                        <li>Applied Homomorphic Encryption in distributed learning</li>
+                    </ul>
                     <a href="https://ieeexplore.ieee.org/document/9788247" target="_blank" class="research-link">View Publication <i class="fas fa-external-link-alt"></i></a>
                 </div>
 
