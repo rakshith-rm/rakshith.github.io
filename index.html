@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakshith Mathad - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Rakshith Mathad</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a Software Engineer specializing in Generative AI and Data Science, currently working at CVS Health in New York City. With a strong background in AI, Machine Learning, and Software Engineering, I focus on building scalable AI solutions and large language model applications. I hold an MS in Applied Data Science from USC and have extensive experience in developing and deploying AI systems that impact millions of users.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Software Engineer - Generative AI</h3>
+                        <h4>CVS Health, New York City, NY</h4>
+                        <p class="date">June 2024 - Present</p>
+                        <ul>
+                            <li>Building large-scale RAG and Rule-based FastAPI chat application on GCP Google AI Platform with $6MM/yr impact</li>
+                            <li>Working with OpenAI GPT PTUs and Gemini LLMs, implementing Feature Store and Matching Engine for improved latency</li>
+                            <li>Scaling production AI system to ~20,000 req/hr impacting 300k customers daily using Kubernetes GKE and Vertex AI</li>
+                            <li>Implementing complex data ingestion, preprocessing, and embedding strategies on GCP BigQuery and BigTable</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Engineer Intern</h3>
+                        <h4>AEG Entertainment Group, Los Angeles, CA</h4>
+                        <p class="date">February 2024 - May 2024</p>
+                        <ul>
+                            <li>Built Azure Data Factory pipelines for large data processing</li>
+                            <li>Implemented PySpark in Databricks for batch API processing</li>
+                            <li>Handled Dynamics CRM data migration via OData REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Analytics Engineering Intern</h3>
+                        <h4>CVS Health, New York City, NY</h4>
+                        <p class="date">May 2023 - August 2023</p>
+                        <ul>
+                            <li>Optimized Hadoop HDFS big data pipelines, processing 100M+ rows</li>
+                            <li>Reduced latency by 40% using HiveQL</li>
+                            <li>Designed scalable ETL workflows and customer campaign strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>AI Software Engineer Intern</h3>
+                        <h4>AlphaICs Corporation, India</h4>
+                        <p class="date">January 2022 - July 2022</p>
+                        <ul>
+                            <li>Developed deep learning applications for Object Detection and Visual Attention</li>
+                            <li>Implemented Recommendation Systems using Matrix Factorization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>AI Research Intern</h3>
+                        <h4>Samsung R&D Institute, India</h4>
+                        <p class="date">November 2020 - June 2021</p>
+                        <ul>
+                            <li>Led team of 3 in SOTA Generative AI PyTorch research</li>
+                            <li>Implemented Conditional GAN with spatially adaptive normalization</li>
+                            <li>Trained generative models on Nvidia DGX cluster</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Master of Science in Applied Data Science</h3>
+                        <h4>University of Southern California, Los Angeles</h4>
+                        <p class="date">August 2022 - May 2024</p>
+                        <p>GPA: 3.7/4.0</p>
+                        <p>Coursework: Machine Learning for Data Science and AI, Applications of Data Mining, Predictive Analytics, Fairness, Security and Privacy in AI</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Bachelor of Engineering in Computer Science</h3>
+                        <h4>KLE Technological University, India</h4>
+                        <p class="date">August 2018 - June 2022</p>
+                        <p>GPA: 3.95/4.0</p>
+                        <p>Coursework: Data Structures and Algorithms, Data Mining, Machine Learning, Distributed & High-Performance Computing, Cloud Computing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Parallelism for LLM Inference on GPUs</h3>
+                    <p>Deployed and served BERT Transformer on RTX GPU using PyTorch, ONNX, and NVIDIA TensorRT runtimes. Implemented CUDA Kernel optimization and Ray Serve deployment for async TinyLlama inference.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>RAG-based LLM with Guardrails</h3>
+                    <p>Built a RAG-based chatbot using LangChain and Llama 2, integrated with Pinecone VectorDB and HuggingFace Sentence Transformer. Implemented NVIDIA NeMo Guardrails and LoRA LLM finetuning techniques.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Research: Distributed Deep Learning</h3>
+                    <p>Published paper on "Performance Analysis of Distributed Deep Learning using Horovod on Image Classification" at IEEE ICICCS. Developed ML privacy-preserving techniques for Federated Learning systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:rakshith1262k@gmail.com">rakshith1262k@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+12132727811">(213) 272-7811</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/your-username" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rakshith Mathad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
