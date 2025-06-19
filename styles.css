@@ -45,7 +45,7 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #ffffff;
 }
 
 .nav-links {
@@ -69,22 +69,23 @@ header {
 
 /* Sections */
 .section {
-    padding: 5rem 1rem;
-    min-height: 100vh;
+    padding: 2rem 1rem;
+    min-height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    padding-top: 2rem;
 }
 
-h2 {
+.section h2 {
+    color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--primary-color);
     text-align: center;
 }
 
@@ -113,6 +114,12 @@ h2 {
     font-size: 1.1rem;
 }
 
+.about-text h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
 /* Skills */
 .skills-section {
     margin-top: 2rem;
@@ -128,7 +135,7 @@ h2 {
 }
 
 .skill-category h4 {
-    color: var(--primary-color);
+    color: #ffffff;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -154,13 +161,13 @@ h2 {
 }
 
 .timeline-content h3 {
-    color: var(--primary-color);
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
 }
 
 .timeline-content h4 {
-    color: var(--text-color);
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
@@ -195,7 +202,7 @@ h2 {
 }
 
 .project-card h3 {
-    color: var(--primary-color);
+    color: #ffffff;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
@@ -237,13 +244,13 @@ h2 {
 }
 
 .cert-content h3 {
-    color: var(--primary-color);
+    color: #ffffff;
     margin-bottom: 1rem;
     font-size: 1.3rem;
 }
 
 .cert-item h4 {
-    color: var(--text-color);
+    color: #ffffff;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
@@ -251,32 +258,35 @@ h2 {
 /* Contact */
 .contact-content {
     text-align: center;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-.contact-content p {
-    color: var(--text-color);
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
-
-.contact-links {
+.contact-info {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
 }
 
-.contact-links a {
+.contact-info a {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
-.contact-links a:hover {
+.contact-info a:hover {
     color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }
 
 /* Resume Download */
@@ -360,4 +370,71 @@ h2 {
     z-index: -1;
 }
 
-/* Remove achievements styles */ 
+/* Remove achievements styles */
+
+/* Currently Cooking Section */
+.cooking-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cooking-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cooking-project {
+    padding: 2rem;
+    border-left: 4px solid var(--primary-color);
+    background: rgba(100, 255, 218, 0.05);
+    border-radius: 0 8px 8px 0;
+}
+
+.cooking-project h3 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.cooking-project p {
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.project-link {
+    margin-top: 1rem;
+}
+
+.project-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-link a:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .cooking-projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .cooking-project {
+        padding: 1.5rem;
+    }
+
+    .cooking-project h3 {
+        font-size: 1.2rem;
+    }
+
+    .cooking-project p {
+        font-size: 1rem;
+    }
+} 
